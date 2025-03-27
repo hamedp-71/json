@@ -8,20 +8,15 @@
     {
       "type": "wireguard",
       "tag": "wireguard-out",
-      "local_address": [
-        "100.80.234.177/32"
-      ],
+      "server": "103.107.198.228",
+      "server_port": 443,
+      "local_address": ["100.80.234.177/32"],
       "private_key": "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg=",
+      "peer_public_key": "tJa6iPx6mpOktn5KoalMslWcpg6pRUdVx3bKDi3wtDg=",
+      "pre_shared_key": "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ=",
       "mtu": 1280,
-      "peer": [
-        {
-          "public_key": "tJa6iPx6mpOktn5KoalMslWcpg6pRUdVx3bKDi3wtDg=",
-          "endpoint": "103.107.198.228:443",
-          "pre_shared_key": "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ=",
-          "allowed_ips": ["0.0.0.0/0", "::/0"],
-          "persistent_keepalive": 5
-        }
-      ]
+      "persistent_keepalive": 5,
+      "allowed_ips": ["0.0.0.0/0", "::/0"]
     }
   ],
   "route": {
