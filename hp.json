@@ -8,19 +8,18 @@
     {
       "type": "wireguard",
       "tag": "wireguard-out",
-      "server": "103.107.198.228",
-      "server_port": 443,
-      "local_address": ["100.80.234.177/32"],
-      "private_key": "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg=",
-      "mtu": 1280,
+      "server": "103.107.198.228", // آدرس سرور
+      "server_port": 443, // پورت سرور
+      "local_address": ["100.80.234.177/32"], // آدرس محلی
+      "private_key": "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg=", // کلید خصوصی
+      "mtu": 1280, // MTU
       "peers": [
         {
-          "public_key": "tJa6iPx6mpOktn5KoalMslWcpg6pRUdVx3bKDi3wtDg=",
-          "pre_shared_key": "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ=",
-          "allowed_ips": ["0.0.0.0/0", "::/0"],
-          "endpoint": "103.107.198.228:443",
+          "public_key": "tJa6iPx6mpOktn5KoalMslWcpg6pRUdVx3bKDi3wtDg=", // کلید عمومی سرور
+          "pre_shared_key": "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ=", // کلید مشترک
+          "allowed_ips": ["0.0.0.0/0", "::/0"], // IPهای مجاز
           "keep_alive": {
-            "interval": 5
+            "interval": 5 // تنظیمات Keepalive
           }
         }
       ]
