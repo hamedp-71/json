@@ -12,7 +12,7 @@
       "server_port": 443,
       "local_address": ["100.80.234.177/32"],
       "private_key": "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg=",
-      "mtu": 1280, // MTU
+      "mtu": 1280,
       "peers": [
         {
           "public_key": "tJa6iPx6mpOktn5KoalMslWcpg6pRUdVx3bKDi3wtDg=",
