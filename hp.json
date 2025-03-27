@@ -2,7 +2,17 @@
   "log": {
     "level": "info"
   },
-  "dns": {},
+  "dns": {
+    "servers": [
+      "10.255.255.2" // DNS مورد نظر شما
+    ],
+    "rules": [
+      {
+        "outbound": "wireguard-out", // هدایت ترافیک DNS از طریق وایرگارد
+        "server": "10.255.255.2"
+      }
+    ]
+  },
   "inbounds": [],
   "outbounds": [
     {
@@ -29,6 +39,10 @@
     "rules": [
       {
         "geoip": ["private"],
+        "outbound": "wireguard-out"
+      },
+      {
+        "protocol": "dns", // هدایت تمام ترافیک DNS به سمت outbound
         "outbound": "wireguard-out"
       }
     ]
